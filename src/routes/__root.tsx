@@ -118,6 +118,28 @@ function RootShell({ children }: { children: React.ReactNode }) {
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
+  useEffect(() => {
+    // Cargar UTMify después de la hidratación para evitar conflicto con el iframe del video
+    const t = setTimeout(() => {
+      if (document.querySelector('script[data-utmify-loaded]')) return;
+      const utm = document.createElement("script");
+      utm.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
+      utm.async = true;
+      utm.defer = true;
+      utm.setAttribute("data-utmify-prevent-subids", "");
+      utm.setAttribute("data-utmify-loaded", "");
+      document.head.appendChild(utm);
+
+      (window as any).pixelId = "6a0a5195bedc97be0104d17e";
+      const px = document.createElement("script");
+      px.async = true;
+      px.defer = true;
+      px.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+      document.head.appendChild(px);
+    }, 1500);
+    return () => clearTimeout(t);
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <Outlet />
