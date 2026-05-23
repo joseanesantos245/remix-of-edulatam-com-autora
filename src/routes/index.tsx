@@ -389,15 +389,47 @@ function Index() {
         <section className="section">
           <div className="section-inner-sm">
             <div className="author-box">
-              <img src={autoraImg} alt="Maria Fernanda, autora del Kit EducaKids Pro" className="author-img" loading="lazy" width={320} height={400} />
+              <div className="author-img-wrap">
+                <img src={autoraImg} alt="Maria Fernanda, autora del Kit EducaKids Pro" className="author-img" loading="lazy" width={320} height={400} />
+              </div>
               <div className="author-content">
-                <p className="author-eyebrow">Quién está detrás de este material</p>
+                <p className="author-eyebrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                  </svg>
+                  Quién está detrás de este material
+                </p>
                 <h2>Maria Fernanda</h2>
+                <p className="author-role">Mamá · Profesora · Creadora del Kit</p>
+                <div className="author-stats">
+                  <span className="author-stat">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                    +3.485 mamás
+                  </span>
+                  <span className="author-stat">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                    </svg>
+                    +2.750 actividades
+                  </span>
+                  <span className="author-stat">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                    Hecho con amor
+                  </span>
+                </div>
                 <p>Soy mamá y profesora, y sé lo importante que es tener actividades simples, bonitas y fáciles de usar para ayudar a los niños a aprender.</p>
                 <p>Por eso creé estos cuadernos: materiales listos para imprimir, pensados para usar en casa o en el aula, de forma práctica, visual y divertida.</p>
                 <p>Cada página fue hecha para reforzar la lectura, la escritura, la caligrafía y la concentración, sin que aprender se vuelva pesado.</p>
                 <p>Mi misión es ayudar a mamás y profesoras a transformar la práctica diaria en avances reales para los niños.</p>
-                <p><strong>Porque aprender también puede ser simple, divertido y con amor.</strong></p>
+                <p><strong>Porque aprender también puede ser simple, divertido y con amor. 💜</strong></p>
               </div>
             </div>
           </div>
