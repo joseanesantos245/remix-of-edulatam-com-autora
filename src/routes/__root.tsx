@@ -84,6 +84,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     scripts: [
       {
+        src: "https://cdn.utmify.com.br/scripts/utms/latest.js",
+        async: true,
+        defer: true,
+        "data-utmify-prevent-subids": "",
+      },
+      {
+        children: `window.pixelId = "6a0a5195bedc97be0104d17e";var a = document.createElement("script");a.setAttribute("async", "");a.setAttribute("defer", "");a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");document.head.appendChild(a);`,
+      },
+      {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
