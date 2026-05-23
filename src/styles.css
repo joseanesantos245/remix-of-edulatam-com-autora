@@ -550,9 +550,7 @@ footer { border-top:1px solid var(--border); background-color:var(--card); paddi
   from { transform: translateX(0); }
   to { transform: translateX(calc(-50% - 8px)); }
 }
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track { animation: none; }
-}
+/* marquee mantém animação mesmo com prefers-reduced-motion */
 
 @keyframes pulse-urgent {
   0%, 100% { transform: scale(1); box-shadow: 0 6px 20px rgba(220,38,38,.45); }
