@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import autoraImg from "@/assets/autora-maria-fernanda.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -380,6 +381,24 @@ function Index() {
             <div className="guarantee-box">
               <img src="/images/guarantee-badge-6zDzLzKe.webp" alt="Garantía 7 días" width={160} height={160} loading="lazy" />
               <h2>Garantía Incondicional de 7 Días</h2>
+            </div>
+          </div>
+        </section>
+
+        {/* Author */}
+        <section className="section">
+          <div className="section-inner-sm">
+            <div className="author-box">
+              <img src={autoraImg} alt="Maria Fernanda, autora del Kit EducaKids Pro" className="author-img" loading="lazy" width={320} height={400} />
+              <div className="author-content">
+                <p className="author-eyebrow">Quién está detrás de este material</p>
+                <h2>Maria Fernanda</h2>
+                <p>Soy mamá y profesora, y sé lo importante que es tener actividades simples, bonitas y fáciles de usar para ayudar a los niños a aprender.</p>
+                <p>Por eso creé estos cuadernos: materiales listos para imprimir, pensados para usar en casa o en el aula, de forma práctica, visual y divertida.</p>
+                <p>Cada página fue hecha para reforzar la lectura, la escritura, la caligrafía y la concentración, sin que aprender se vuelva pesado.</p>
+                <p>Mi misión es ayudar a mamás y profesoras a transformar la práctica diaria en avances reales para los niños.</p>
+                <p><strong>Porque aprender también puede ser simple, divertido y con amor.</strong></p>
+              </div>
             </div>
           </div>
         </section>
