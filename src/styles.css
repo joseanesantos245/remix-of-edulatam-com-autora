@@ -543,6 +543,7 @@ footer { border-top:1px solid var(--border); background-color:var(--card); paddi
 /* ── Infinite Marquee (testimonials) ── */
 .marquee { overflow: hidden; position: relative; width: 100%; mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); }
 .marquee-track { display: flex; gap: 16px; width: max-content; animation: marqueeScroll 35s linear infinite; will-change: transform; }
+.marquee.is-paused .marquee-track { animation-play-state: paused; }
 @media (min-width: 768px) { .marquee-track { animation-duration: 50s; } }
 .marquee .testimonial-card { flex: 0 0 auto; width: 280px; }
 @media (min-width: 640px) { .marquee .testimonial-card { width: 320px; } }
