@@ -357,7 +357,7 @@ function Index() {
           <div className="section-inner">
             <div className="section-header">
               <div className="badge-pill" style={{ background: "linear-gradient(to right,#EC4899,#A855F7,#F43F5E)", color: "#fff", boxShadow: "0 4px 16px rgba(236,72,153,.3)", outline: "2px solid rgba(255,255,255,.6)", marginBottom: 16 }}>
-                +3.485 depoimentos reais
+                +3.485 testimonios reales
               </div>
               <h2 style={{ maxWidth: 672, margin: "0 auto", lineHeight: 1.3 }}>
                 Mamás y profesoras que ya <span className="gradient-pink">transformaron</span> el aprendizaje de sus niños
