@@ -225,6 +225,29 @@ function Index() {
           </div>
         </section>
 
+        {/* Testimonials */}
+        <section className="section section-soft" style={{ position: "relative", overflow: "hidden" }}>
+          <div className="section-inner">
+            <div className="section-header">
+              <div className="badge-pill" style={{ background: "linear-gradient(to right,#EC4899,#A855F7,#F43F5E)", color: "#fff", boxShadow: "0 4px 16px rgba(236,72,153,.3)", outline: "2px solid rgba(255,255,255,.6)", marginBottom: 16 }}>
+                +3.485 depoimentos reais
+              </div>
+              <h2 style={{ maxWidth: 672, margin: "0 auto", lineHeight: 1.3 }}>
+                Mamás y profesoras que ya <span className="gradient-pink">transformaron</span> el aprendizaje de sus niños
+              </h2>
+            </div>
+            <div className="marquee">
+              <div className="marquee-track">
+                {[...testimonials, ...testimonials].map((t, i) => (
+                  <div key={`${t.name}-${i}`} className="testimonial-card">
+                    <img src={t.img} alt={`Testimonio de ${t.name}`} loading="lazy" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Lo que recibes */}
         <section id="contenido" className="section section-soft">
           <div className="section-inner">
