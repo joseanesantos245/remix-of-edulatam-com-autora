@@ -363,7 +363,13 @@ function Index() {
                 Mamás y profesoras que ya <span className="gradient-pink">transformaron</span> el aprendizaje de sus niños
               </h2>
             </div>
-            <div className="marquee">
+            <div
+              className="marquee"
+              onPointerDown={(e) => e.currentTarget.classList.add("is-paused")}
+              onPointerUp={(e) => e.currentTarget.classList.remove("is-paused")}
+              onPointerLeave={(e) => e.currentTarget.classList.remove("is-paused")}
+              onPointerCancel={(e) => e.currentTarget.classList.remove("is-paused")}
+            >
               <div className="marquee-track">
                 {[...testimonials, ...testimonials].map((t, i) => (
                   <div key={`${t.name}-${i}`} className="testimonial-card">
