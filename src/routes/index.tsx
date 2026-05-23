@@ -367,7 +367,7 @@ function Index() {
               <div className="marquee-track">
                 {[...testimonials, ...testimonials].map((t, i) => (
                   <div key={`${t.name}-${i}`} className="testimonial-card">
-                    <img src={t.img} alt={`Testimonio de ${t.name}`} loading="lazy" />
+                    <img src={t.img} alt={`Testimonio de ${t.name}`} width={320} height={400} decoding="async" />
                   </div>
                 ))}
               </div>
